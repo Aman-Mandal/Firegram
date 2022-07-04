@@ -1,0 +1,15 @@
+.title h1 {
+  color: #eb8f88;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.title h2,
+.title p {
+  text-align: center;
+}
+.title h2 {
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
