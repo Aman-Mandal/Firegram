@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import classes from './UploadForm.module.css'
 
 const UploadForm = () => {
   const [file, setFile] = useState(null)
@@ -23,9 +24,12 @@ const UploadForm = () => {
 
   return (
     <form>
-      <input type="file" onChange={fileUploadHandler} />
-      <div>
-        {error && <div>{error}</div>}
+      <label>
+        <input type="file" onChange={fileUploadHandler} />
+        <span>+</span>
+      </label>
+      <div className={classes.output}>
+        {error && <div className={classes.error}>{error}</div>}
         {file && <div>{file.name}</div>}
       </div>
     </form>

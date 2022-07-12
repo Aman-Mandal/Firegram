@@ -1,0 +1,40 @@
+form {
+  margin: 50px auto 10px;
+  text-align: center;
+}
+
+label input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+label {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto;
+  border: 1px solid #efb6b2;
+  border-radius: 50%;
+  line-height: 40px;
+  font-weight: bold;
+  color: #efb6b2;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: #efb6b2;
+  color: white;
+  transform: scale(1.2);
+  transition: transform 0.2s ease-out;
+}
+
+.output {
+  height: 60px;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: #ff4a4a;
+}
